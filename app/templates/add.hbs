@@ -1,0 +1,11 @@
+<div id = "add-city">
+	<p>Enter city, zip code, or airport location</p>
+	{{input value = query}}<button {{action 'cancel'}}>Cancel</button>
+	<ul>
+		{{#each city in controller}}
+		<li {{action 'addcity' city}}>
+			{{city.formatted_address}}
+		</li>
+		{{/each}}
+	</ul>
+</div>

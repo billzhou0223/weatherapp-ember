@@ -1,0 +1,43 @@
+<div id = "selected-city" {{bind-attr class = "conditionClassname"}}>
+  <div>
+    <section id="city-header">
+      <h2>{{name}}</h2>
+      <h4>{{summary}}</h4>
+      <h1>{{currentTemperature}}</h1>
+    </section>
+
+    <section id="today">
+      <ul class="today-overview">{{updateSelectedCityTodayOverview}}</ul>
+      <div class="today-hourly-list-container">
+        <ul class="today-hourly-list" {{bind-attr style = "hourlyForecastLength"}}>{{updateSelectedCityHourlyForecast}}</ul>
+      </div>
+    </section>
+
+    <section id="forecast">
+      <ul class="forecast-list">{{updateSelectedCityForecast}}</ul>
+    </section>
+
+    <section id="today-details">
+      <p class="today-summary">{{updateSelectedCityTodayDetailsSummary}}</p>
+      <ul class="today-details-list">
+        {{updateSelectedCityTodayDetailsStatistics}}
+      </ul>
+    </section>
+  </div>
+
+  <nav {{bind-attr class = "conditionClassname"}}>
+    <div class = "next-prev-nav">
+      <div {{bind-attr class = ":prev-button isSelectedCityFirst:disabled"}}>
+        {{#link-to 'city' previousCity}}◀{{/link-to}}
+      </div>
+      {{renderNavDot}}
+      <div {{bind-attr class = ":next-button isSelectedCityLast:disabled"}}>
+        {{#link-to 'city' nextCity}}▶{{/link-to}}
+      </div>
+    </div>
+    <div class = "list-button">{{#link-to "index"}}☰{{/link-to}}</div>
+    <div {{action 'toggleUnits'}} {{bind-attr class = ":celsius-or-fahrenheit controllers.index.useUSUnits:use-fahrenheit:use-celsius"}}>
+      <span class="celsius">˚C</span>/<span class="fahrenheit">˚F</span>
+    </div>
+  </nav>
+</div>

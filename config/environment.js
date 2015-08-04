@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'homework3-weatherappember',
     environment: environment,
     baseURL: '/',
-    locationType: 'auto',
+    locationType: 'hash',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -16,6 +16,16 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+
+    contentSecurityPolicy: {
+      'default-src': "'none'",
+      'script-src': "'self' http://coen268.peterbergstrom.com https://api.forecast.io",
+      'font-src': "'self'",
+      'connect-src': "'self'",
+      'img-src': "'self'",
+      'style-src': "'self' 'unsafe-inline'",
+      'media-src': "'self'"
     }
   };
 

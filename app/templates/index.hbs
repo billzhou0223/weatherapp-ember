@@ -1,0 +1,37 @@
+<div id="cities-list">
+	<ul>
+		{{#each city in cities itemController = 'eachcity'}}
+		<li {{bind-attr class = "city.conditionClassname"}}>
+			{{#link-to 'city' city disabled = isEditing}}
+			<ul>
+				{{#if isEditing}}
+					{{#if city.isNotCurrentLocation}}<li class = "delete-button" {{action 'deleteCity' city.id}}>−</li>{{/if}}
+				{{/if}}
+				<li class = "city-info" {{bind-attr class = "city.shiftRight"}}>
+					<div class = "time">
+						{{city.currentTime}}
+					</div>
+					<div class = "city-name">
+						{{city.name}}
+					</div>
+				</li>
+				<li class="temperature">{{city.currentTemperature}}</li>
+			</ul>
+			{{/link-to}}
+		</li>
+		{{/each}}
+	</ul>
+
+	<nav>
+		<div {{action 'toggleUnits'}} {{bind-attr class = ":celsius-or-fahrenheit useUSUnits:use-fahrenheit:use-celsius"}}>
+			<span class="celsius">˚C</span>/<span class="fahrenheit">˚F</span>
+		</div>
+		<a class="attribution" href="http://forecast.io/" target="_blank">Powered by Forecast</a>
+		{{#if isEditing}}
+		<div class = "done-button" {{action 'done'}}>Done</div>
+		{{else}}
+		<div class = "edit-button" {{action 'edit'}}>Edit</div>
+		{{/if}}		
+		{{#link-to 'add' class = "add-button"}}ᐩ{{/link-to}}
+	</nav>
+</div>
