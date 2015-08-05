@@ -1,7 +1,6 @@
 # Homework3-weatherappember
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+A weather app developed in ember.js
 
 ## Prerequisites
 
