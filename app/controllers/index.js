@@ -9,7 +9,7 @@ var IndexController = Ember.ArrayController.extend({
     weatherAPIBaseURL:   'https://api.forecast.io/forecast/',
     
     // The API key. Replace with your own.
-    weatherAPIKey: '0dcfddff766642799f1f15280394bebc',
+    weatherAPIKey: '7fb20ec11f721b8a0865ff2507a89249',
 
     // The key for the current location self will be kept in the data. It is special so it is defined here.
     currentLocationKey: 'currentlocation'
@@ -82,13 +82,11 @@ var IndexController = Ember.ArrayController.extend({
 	loadDataFromLocalStorage: function() {
   	var localStorageCities = JSON.parse(localStorage.getItem("cities"));
   	if(localStorageCities) {
-  		// this.cities = localStorageCities;
   		this.set('cities', localStorageCities);
   	}
-  	// this.useUSUnits = JSON.parse(localStorage.getItem("useUSUnits"));
+  	
   	this.set('useUSUnits', JSON.parse(localStorage.getItem("useUSUnits")));
   	if(this.get('useUSUnits') === null || this.get('useUSUnits') === undefined) {
-  		// this.useUSUnits = true;
   		this.set('useUSUnits', true);
   	}
   },
@@ -175,10 +173,7 @@ var IndexController = Ember.ArrayController.extend({
 	    	// city.set('weatherData', 'null');
 	    } 
 	    
-	    // Either way, set the location information.
-	    // city.id   = self.get('config.currentLocationKey');
       Ember.set(city, 'id', self.get('config.currentLocationKey'));
-	    // city.name = 'Current Location';
 	    Ember.set(city, 'name', 'Current Location');
 	    city.lat  = position.coords.latitude;
 	    city.lng  = position.coords.longitude;

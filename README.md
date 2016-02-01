@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Homework3-weatherappember
 
 A weather app developed in ember.js
@@ -54,4 +53,3 @@ Specify what it takes to deploy your app.
 =======
 # weatherapp-ember
 A weather app developed in Ember.js
->>>>>>> 9600f513094722604f02d1ce1d9f5e7666a5b300
