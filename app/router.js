@@ -10,8 +10,4 @@ Router.map(function() {
 	this.route('add');
 });
 
-// Router.reopen({
-//   rootURL: '/#/'
-// });
-
 export default Router;

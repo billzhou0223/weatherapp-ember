@@ -382,7 +382,7 @@ var EachCityController = Ember.ObjectController.extend({
   renderNavDot: function() {
     var id                = this.get('id'),
         cities            = this.get('controllers.index.cities'),
-        navHTML           = [];
+        navHTML           = '';
 
     
       
