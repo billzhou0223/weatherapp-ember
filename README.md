@@ -1,55 +1,25 @@
-# Homework3-weatherappember
+# Weather app
+A web app developed in Ember.js.
 
-A weather app developed in ember.js
+###Demo Video###
+<a href="https://youtu.be/buZJ-e1v3gA" target="_blank"><img src="demo-imgs/Screen Shot 2016-03-27 at 11.56.08 AM.png" 
+alt="Demo video" width="300" height="180" border="10"/></a>
 
-## Prerequisites
+###Installation###
+1. Have [Ember-cli](http://ember-cli.com/user-guide/) installed on machine.
+2. Run Ember app.
 
-You will need the following things properly installed on your computer.
+    Go to Ember app directory, run following code.
+    ```
+    Ember server
+    ```
+    
+###Functionality###
+- Homepage (Picture 1)
+- Click on a city in the list to go to `detail page`  (Picture 2)
+- Click `☰` to go back to homepage  (Picture 2)
+- Click `˚C/˚F` to convert temperature degree unit  (Picture 3)
+- Click `Edit` to delete a city from the list   (Picture 4)
+- Click `+` to navigate to search page. Add a city by searching city name, address or zip code  (Picture 5 & 6)
 
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://www.ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
-
-## Installation
-
-* `git clone <repository-url>` this repository
-* change into the new directory
-* `npm install`
-* `bower install`
-
-## Running / Development
-
-* `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://www.ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
-=======
-# weatherapp-ember
-A weather app developed in Ember.js
+![](demo-imgs/Screen Shot 2016-03-27 at 12.11.52 PM.png)
