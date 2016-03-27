@@ -14,6 +14,7 @@ alt="Demo video" width="300" height="180" border="10"/></a>
     Ember server
     ```
 3. Access http://localhost:4200 in browser to launch the app.
+
 ###Functionality###
 - Homepage (Picture 1)
 - Click on a city in the list to go to `detail page`  (Picture 2)
