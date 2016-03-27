@@ -9,7 +9,8 @@ var AddController = Ember.ArrayController.extend({
   actions: {
   	addcity: function(data) {
   		var city = {},
-  				name = data.displayName,
+  				name = isNaN(parseInt(data.displayName)) ? 
+                    data.displayName : data.formatted_address.split(',')[0],
   				id = this.getIdFromName(name);
 
 			if(this.get('controllers.index').cityDataForId(id) === null){
