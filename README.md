@@ -13,12 +13,12 @@ alt="Demo video" width="300" height="180" border="10"/></a>
     ```
     Ember server
     ```
-    
+3. Access http://localhost:4200 in browser to launch the app.
 ###Functionality###
 - Homepage (Picture 1)
 - Click on a city in the list to go to `detail page`  (Picture 2)
 - Click `☰` to go back to homepage  (Picture 2)
-- Click `˚C/˚F` to convert temperature degree unit  (Picture 3)
+- Click `˚C/˚F` to convert temperature unit between Celsius and Fahrenheit (Picture 3)
 - Click `Edit` to delete a city from the list   (Picture 4)
 - Click `+` to navigate to search page. Add a city by searching city name, address or zip code  (Picture 5 & 6)
 
