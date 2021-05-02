@@ -2,7 +2,7 @@
 A web app developed in Ember.js.
 
 <p align="center">
-<a href="https://youtu.be/y4JjcWehR-A" target="_blank"><img src="demo-imgs/Screen Shot 2016-03-27 at 11.56.08 AM.png" 
+<a href="https://youtu.be/EIWP0I1GVHw" target="_blank"><img src="demo-imgs/Screen Shot 2016-03-27 at 11.56.08 AM.png" 
 alt="Demo video" width="300" height="180" border="10"/></a>
 </p>
 
